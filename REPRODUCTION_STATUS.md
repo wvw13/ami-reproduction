@@ -1,3 +1,5 @@
+> Historical reproduction-v1.1 record; current deployment candidate documentation is README.md and docs/DEPLOYMENT.md. Machine-specific paths/provider hosts are redacted in this candidate.
+
 # Reproduction status
 
 更新：2026-10-06，Phase 3 / reproduction-v1。
@@ -8,9 +10,9 @@
 
 | 项目 | 结果 |
 |---|---|
-| 工作目录 | `/data1/sp/Agent-Memory/ami-reproduction` |
-| upstream | `/data1/sp/Agent-Memory/ActiveMemoryIndex-main`；105 文件 SHA-256 清单，检查无变化 |
-| 默认 Python / Conda | `/home/sp/miniconda3/bin/python`，3.13.11；Conda 可用 |
+| 工作目录 | `<PROJECT_ROOT>/ami-reproduction` |
+| upstream | `<PROJECT_ROOT>/ActiveMemoryIndex-main`；105 文件 SHA-256 清单，检查无变化 |
+| 默认 Python / Conda | `<PYTHON_EXECUTABLE>`，3.13.11；Conda 可用 |
 | 已有 Conda 环境 | base 3.13.11；cs224n 3.13.15；siglip_mm 3.10.20 |
 | 选用运行环境 | `.venv/`，由 siglip_mm Python 3.10.20 创建的独立 venv；未改已有 Conda 环境 |
 | sudo | 未使用 |
@@ -67,7 +69,7 @@ Fake 的语义模型是确定性词哈希/固定 JSON，不测真实语义质量
 ## 当前启动与重跑命令
 
 ```bash
-cd /data1/sp/Agent-Memory/ami-reproduction
+cd <PROJECT_ROOT>/ami-reproduction
 .venv/bin/python -m reproduction.run_tests
 .venv/bin/python -m reproduction.check_http
 
@@ -121,7 +123,7 @@ export AMI_REPRO_TEST_TOKEN="$(.venv/bin/python -c 'import secrets; print(secret
 
 ## 用户提供的模型接入信息已配置
 
-已在私密 `.env` 填好所有已确定的非凭据配置：LLM `https://linkapi.ai/v1` / `gpt-4o-mini`；Embedding 原生完整 endpoint `https://maas.qianwenaiapi.com/api/v1/services/embeddings/text-embedding/text-embedding` / `text-embedding-v4` / 1024 维。凭据字段未改动、未输出；文件权限仍为 600，仍被 Git 忽略。API 主机地址来自用户示例，未探测其真实能力或声明它们为阿里云/OpenAI 官方域名。
+已在私密 `.env` 填好所有已确定的非凭据配置：LLM `https://provider.example.invalid/v1` / `gpt-4o-mini`；Embedding 原生完整 endpoint `https://embedding.example.invalid/native` / `text-embedding-v4` / 1024 维。凭据字段未改动、未输出；文件权限仍为 600，仍被 Git 忽略。API 主机地址来自用户示例，未探测其真实能力或声明它们为阿里云/OpenAI 官方域名。
 
 AMI 原适配器使用 OpenAI-compatible JSON；用户给出的 embedding curl 使用 DashScope-native JSON。因此增加 reproduction 层的可选原生 HTTP bridge（AMI_REPRO_EMBED_PROTOCOL=dashscope-native），不改 app/ 或记忆算法。向量的批处理、分段、归一化及 index/维度校验继续由 upstream 执行。native transport 写入独立 embedding identity；不能复用其他 transport 的库。
 

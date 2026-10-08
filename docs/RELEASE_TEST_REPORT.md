@@ -1,0 +1,9 @@
+# Candidate free test report — 2026-10-08
+
+- Isolated temporary-copy HTTP Mock regression:39 checks passed, including Health/auth, synchronousecho, immediate Search, top_k100, user isolation, duplicate/concurrent duplicate/conflict, invalid payload, SQLite integrity and restart persistence. Only its own mock process was stopped; live instance never contacted.
+- Persistent phase-budget fixtures:13 tests passed, including both ceilings, float-baseline regression, persisted expenditure and unresolved reservation after simulated restart.
+- Cached provider transport fixtures:5 tests passed; response-model whitelist/minimal-transport fixtures:9 tests passed. No real provider calls.
+- Upstream offline runner:26 standalone test files all exit0. Initial sandbox run timed out on test_admission; one outside-sandbox repeat passed all26 with the same outbound-network-denial guard. No algorithm change was made to obtain the pass.
+- Dependencies:27 locked installed versions match, pip check passed. An isolated venv reused already-installed dependency packages through a local ignored .pth file; this is not a fresh internet-download installation test. Candidate app/cache module import paths were verified to belong to this checkout, not the research runtime.
+- Curated file and all reachable history pattern audit passed after manual confirmation of two upstream synthetic fixture strings and a variable-reference false positive. No real private credentials were loaded for comparison. Historical public machine paths remain in old commits; current candidate notes are redacted. Pattern audit is bounded, not proof against every possible secret format.
+- No model fees, no official Smoke/Full, no production restart. The release preserves existing error-handling limitations; passing mocks is not Full capacity or model-quality evidence.

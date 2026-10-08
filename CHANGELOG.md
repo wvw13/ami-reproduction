@@ -1,5 +1,18 @@
 # Changelog
 
+## ami-deployment-v1.0-rc1 — candidate, 2026-10-08
+
+- Continue reproduction-v1.1 in the existing repository; no changes to app algorithms, prompts, models or retrieval.
+- Publish deployed baseline_cache transport, Token Add/Search adapter, durable payload digest conflicts, namespace, persistent dual-budget guard, frozen non-secret profile and rootless scripts.
+- Relocate five import/interpreter paths for the repository layout; retain original live source hashes in the mapping manifest. Running service is not modified or restarted by publication.
+- Add blank endpoint/key templates, disabled phase template, isolated free Mock HTTP/persistence tests and budget regression.
+- Document application-before-Full distinction, untested ngrok correct-Token E2E and cold real startup needing authorized warm-up cache initialization. No reliability patch or budget increase is silently activated.
+- Exclude secrets, state, databases, caches, logs, permits, provider endpoints, datasets and ngrok binary. No push or official application performed.
+
+---
+
+# Changelog
+
 ## reproduction-v1 — 2026-10-06
 
 No original algorithm contribution is claimed. No algorithm optimization, tuning, model call, benchmark run, official Smoke/Full or deployment occurred.

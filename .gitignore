@@ -1,3 +1,4 @@
+# Public source/config templates only; all runtime state stays local.
 .venv/
 .env
 .env.*
@@ -8,8 +9,22 @@ __pycache__/
 .pytest_cache/
 data/
 artifacts/
+private/
+cache/
+logs/
+run/
+release-staging/
 *.sqlite*
 *.db
+*-wal
+*-shm
 *.log
+*.jsonl
 *.pem
 *.key
+*.tgz
+*.tar.gz
+bin/
+*STATE*.json
+*RESULT*.json
+*permit*.json

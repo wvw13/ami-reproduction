@@ -41,3 +41,9 @@ Before a public release, bind this repository to its own reviewed commit, retain
 ### Post-v1 transport adaptation
 
 The optional `reproduction/native_embedding.py` bridge is our engineering adaptation for the user's supplied DashScope-native endpoint. It changes wire format only and keeps upstream embedding preprocessing, representation and retrieval unchanged. Its protocol mapping is based on the supplied curl example and Alibaba Cloud's [native embedding API documentation](https://help.aliyun.com/zh/model-studio/text-embedding-synchronous-api). The user-supplied gateway host is not independently verified as an official provider. No original memory-algorithm claim or new model-quality claim follows from this adaptation. The reproduction-v1 tag still records the earlier baseline without this bridge.
+
+## Deployed API candidate: ami-deployment-v1.0-rc1
+
+The supplied rc3 snapshot, nine app files and original algorithm/prompts remain unchanged from reproduction-v1.1 and ami_baseline_v1. Added baseline_cache.py and deployment API, payload idempotency, Token auth, namespace, provider budget/reservation guards and rootless launch support are our engineering adaptations. Five import/interpreter paths are relocated for the repository layout; exact live mapping is published in docs/DEPLOYED_SOURCE_MANIFEST.json. No new algorithm or official benchmark score is claimed. The current upstream repository has later releases; this reproduction does not silently upgrade to them.
+
+The above technical-report title/DOI is retained as transcribed from supplied source; resolving the DOI did not establish its bibliography during this release preparation. Upstream snapshot hashes are authoritative for copied code; exact upstream commit remains a provenance follow-up. Future OurMemory methods must carry separate method diffs and evidence.

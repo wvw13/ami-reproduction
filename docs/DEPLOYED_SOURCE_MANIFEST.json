@@ -1,0 +1,385 @@
+{
+  "release": "ami-deployment-v1.0-rc1",
+  "algorithm": "ami_baseline_v1",
+  "parent_commit": "901469b530302a5af934b92a61a107ca2b79ed2c",
+  "mapping": [
+    {
+      "candidate": "app/__init__.py",
+      "live": "ami-reproduction/app/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "candidate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exact": true,
+      "research_freeze_exact": true
+    },
+    {
+      "candidate": "app/config.py",
+      "live": "ami-reproduction/app/config.py",
+      "sha256": "92fd9c686b61d46cf302cd6c03a42bdb937ddfd1486d381e557adbc5eeb8115a",
+      "candidate_sha256": "92fd9c686b61d46cf302cd6c03a42bdb937ddfd1486d381e557adbc5eeb8115a",
+      "exact": true,
+      "research_freeze_exact": true
+    },
+    {
+      "candidate": "app/dci.py",
+      "live": "ami-reproduction/app/dci.py",
+      "sha256": "23607e3a1aa79132978adf563f8a9a2c0cda02544930ba10a7011a8151bb892f",
+      "candidate_sha256": "23607e3a1aa79132978adf563f8a9a2c0cda02544930ba10a7011a8151bb892f",
+      "exact": true,
+      "research_freeze_exact": true
+    },
+    {
+      "candidate": "app/embed.py",
+      "live": "ami-reproduction/app/embed.py",
+      "sha256": "1247fc1e84bb17ed0297f8c71600041ddb359579421d9f2863309355c858bce4",
+      "candidate_sha256": "1247fc1e84bb17ed0297f8c71600041ddb359579421d9f2863309355c858bce4",
+      "exact": true,
+      "research_freeze_exact": true
+    },
+    {
+      "candidate": "app/llm.py",
+      "live": "ami-reproduction/app/llm.py",
+      "sha256": "e4665f4d98b4d9b3ee42f32498805589c57b5085445cd64b3009fe661f20bb25",
+      "candidate_sha256": "e4665f4d98b4d9b3ee42f32498805589c57b5085445cd64b3009fe661f20bb25",
+      "exact": true,
+      "research_freeze_exact": true
+    },
+    {
+      "candidate": "app/main.py",
+      "live": "ami-reproduction/app/main.py",
+      "sha256": "6bee40648827d66df4a075ee892eb2cb6279a48ccb856c16aa868c8eb12a56da",
+      "candidate_sha256": "6bee40648827d66df4a075ee892eb2cb6279a48ccb856c16aa868c8eb12a56da",
+      "exact": true,
+      "research_freeze_exact": true
+    },
+    {
+      "candidate": "app/rerank.py",
+      "live": "ami-reproduction/app/rerank.py",
+      "sha256": "1afce6f275d5ce590e28584fe83841c0ca2363b59a3ed1ec7a3ab18c6917d975",
+      "candidate_sha256": "1afce6f275d5ce590e28584fe83841c0ca2363b59a3ed1ec7a3ab18c6917d975",
+      "exact": true,
+      "research_freeze_exact": true
+    },
+    {
+      "candidate": "app/store.py",
+      "live": "ami-reproduction/app/store.py",
+      "sha256": "0a1757c0cb4c19cc83d713b93486a2c34b047cdbc73ce9da16e6172746859816",
+      "candidate_sha256": "0a1757c0cb4c19cc83d713b93486a2c34b047cdbc73ce9da16e6172746859816",
+      "exact": true,
+      "research_freeze_exact": true
+    },
+    {
+      "candidate": "app/updates.py",
+      "live": "ami-reproduction/app/updates.py",
+      "sha256": "77c41de8de02acaa256198971772fa85d8192918898d3d13bedf0a17098acbb7",
+      "candidate_sha256": "77c41de8de02acaa256198971772fa85d8192918898d3d13bedf0a17098acbb7",
+      "exact": true,
+      "research_freeze_exact": true
+    },
+    {
+      "candidate": "reproduction/serve.py",
+      "live": "ami-reproduction/reproduction/serve.py",
+      "sha256": "f2ba0c2157d553cac726c56734bede97a479790a8ab88e9382662bca7ca51024",
+      "candidate_sha256": "f2ba0c2157d553cac726c56734bede97a479790a8ab88e9382662bca7ca51024",
+      "exact": true
+    },
+    {
+      "candidate": "reproduction/real_minimal.py",
+      "live": "ami-reproduction/reproduction/real_minimal.py",
+      "sha256": "7f55a5722eccb1d54bb8379f7471d051be1fd4b7351078c3f7f12edab7117499",
+      "candidate_sha256": "7f55a5722eccb1d54bb8379f7471d051be1fd4b7351078c3f7f12edab7117499",
+      "exact": true
+    },
+    {
+      "candidate": "reproduction/baseline_cache.py",
+      "live": "ami-reproduction/reproduction/baseline_cache.py",
+      "sha256": "f49320749019312cd1655ae94fcb2ff166125b60d0d96d0ecbe8de2a7b74665b",
+      "candidate_sha256": "f49320749019312cd1655ae94fcb2ff166125b60d0d96d0ecbe8de2a7b74665b",
+      "exact": true
+    },
+    {
+      "candidate": "deployment/bootstrap.py",
+      "live": "deployment/bootstrap.py",
+      "sha256": "9dcf14819ea0b2cd3b63d4602acd00b49575187f9d4c6832178ea63c98353812",
+      "candidate_sha256": "882bbab61c14a9cbad9a0a374d5cc5a7337c1dbab5140b1de82a003450bd1f27",
+      "exact": false,
+      "difference": "repository-relative import/interpreter path only"
+    },
+    {
+      "candidate": "deployment/control.py",
+      "live": "deployment/control.py",
+      "sha256": "88587eced442af1a45b6f1cf38986f9ee4b0d93ba37ae07c4dfa779208f1cd4e",
+      "candidate_sha256": "58005b06a63829a1efb8ac246aecdf5ee134e1bfc3a2c31796a94af1ebe6e8d2",
+      "exact": false,
+      "difference": "repository-relative import/interpreter path only"
+    },
+    {
+      "candidate": "deployment/run_service.py",
+      "live": "deployment/run_service.py",
+      "sha256": "e062a76342d9b8c74cc66bb092ac392aed603634557700792407d445719e3379",
+      "candidate_sha256": "e062a76342d9b8c74cc66bb092ac392aed603634557700792407d445719e3379",
+      "exact": true,
+      "difference": null
+    },
+    {
+      "candidate": "deployment/service.py",
+      "live": "deployment/service.py",
+      "sha256": "bbe9a39634eb0440eb5e6fc873f65f886dcec6bb2bc9f1b226088c09e9289ed7",
+      "candidate_sha256": "bbe9a39634eb0440eb5e6fc873f65f886dcec6bb2bc9f1b226088c09e9289ed7",
+      "exact": true,
+      "difference": null
+    },
+    {
+      "candidate": "deployment/phase_budget_guard.py",
+      "live": "deployment/phase_budget_guard.py",
+      "sha256": "2a138569bbb35d1b63de11c835e7de22bb948d6cfa6b9bcf594e005df7b18086",
+      "candidate_sha256": "2a138569bbb35d1b63de11c835e7de22bb948d6cfa6b9bcf594e005df7b18086",
+      "exact": true,
+      "difference": null
+    },
+    {
+      "candidate": "deployment/profile.env",
+      "live": "deployment/profile.env",
+      "sha256": "d07992cadc2abb949a9db698b6cbd178773a5ac80a1ed3a96a7259b484426b51",
+      "candidate_sha256": "d07992cadc2abb949a9db698b6cbd178773a5ac80a1ed3a96a7259b484426b51",
+      "exact": true,
+      "difference": null
+    },
+    {
+      "candidate": "deployment/start.sh",
+      "live": "deployment/start.sh",
+      "sha256": "87f2c8dfadf48129a9644f07fdaa91bc5f80d2673199c2c1de30253fdff5422a",
+      "candidate_sha256": "5d664a974a8bb8fb925007da7f606a63f6276e5c2bf6ce6e20c4e72471348ba6",
+      "exact": false,
+      "difference": "repository-relative import/interpreter path only"
+    },
+    {
+      "candidate": "deployment/stop.sh",
+      "live": "deployment/stop.sh",
+      "sha256": "d638dd5e8f013e7e5b8442e787d8436531fe34b8c7ee6e5826d60d023acbdf98",
+      "candidate_sha256": "95f9cd9d8fefa88d48e6b1f137f112794521c8190ab08bb39fb1458c49cabdb4",
+      "exact": false,
+      "difference": "repository-relative import/interpreter path only"
+    },
+    {
+      "candidate": "deployment/check.sh",
+      "live": "deployment/check.sh",
+      "sha256": "96702e569d391fa7f719199acafa65b5d08c40d10c5d3c1753fc49d75486ca07",
+      "candidate_sha256": "200878cc53d5a1c6f7f0cd57dab280188a19e78ffdac3d6d76aa944274006893",
+      "exact": false,
+      "difference": "repository-relative import/interpreter path only"
+    }
+  ],
+  "profile_research_comparison": {
+    "AMI_LLM_MODEL": {
+      "deployment": "gpt-4o-mini",
+      "research": "gpt-4o-mini",
+      "same": true
+    },
+    "AMI_LLM_CONCURRENCY": {
+      "deployment": "8",
+      "research": "8",
+      "same": true
+    },
+    "AMI_EMBED_BACKEND": {
+      "deployment": "openai",
+      "research": "openai",
+      "same": true
+    },
+    "AMI_EMBED_MODEL": {
+      "deployment": "text-embedding-v4",
+      "research": "text-embedding-v4",
+      "same": true
+    },
+    "AMI_EMBED_DIMENSIONS": {
+      "deployment": "1024",
+      "research": "1024",
+      "same": true
+    },
+    "AMI_EMBED_BATCH": {
+      "deployment": "10",
+      "research": "10",
+      "same": true
+    },
+    "AMI_EMBED_TIMEOUT": {
+      "deployment": "20",
+      "research": "20",
+      "same": true
+    },
+    "AMI_EMBED_RETRIES": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_EMBED_CONCURRENCY": {
+      "deployment": "4",
+      "research": "4",
+      "same": true
+    },
+    "AMI_EXTRACT": {
+      "deployment": "1",
+      "research": "1",
+      "same": true
+    },
+    "AMI_RECALL_QUERY": {
+      "deployment": "1",
+      "research": "1",
+      "same": true
+    },
+    "AMI_RECALL_WEIGHT": {
+      "deployment": "0.5",
+      "research": "0.5",
+      "same": true
+    },
+    "AMI_RETURN_LIMIT": {
+      "deployment": "100",
+      "research": "100",
+      "same": true
+    },
+    "AMI_RETURN_CHAR_BUDGET": {
+      "deployment": "400000",
+      "research": "400000",
+      "same": true
+    },
+    "AMI_RAW_FIRST": {
+      "deployment": "1",
+      "research": "1",
+      "same": true
+    },
+    "AMI_WINDOW_RADIUS": {
+      "deployment": "1",
+      "research": "1",
+      "same": true
+    },
+    "AMI_UPDATE_DETECT": {
+      "deployment": "1",
+      "research": "1",
+      "same": true
+    },
+    "AMI_UPDATE_RENDER": {
+      "deployment": "1",
+      "research": "1",
+      "same": true
+    },
+    "AMI_UPDATE_WITHHOLD": {
+      "deployment": "1",
+      "research": "1",
+      "same": true
+    },
+    "AMI_UPDATE_VERSION": {
+      "deployment": "7",
+      "research": "7",
+      "same": true
+    },
+    "AMI_ADD_MAX_INFLIGHT": {
+      "deployment": "16",
+      "research": "16",
+      "same": true
+    },
+    "AMI_SEARCH_MAX_INFLIGHT": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_ADMISSION_WAIT": {
+      "deployment": "45",
+      "research": "45",
+      "same": true
+    },
+    "AMI_RETRY_AFTER": {
+      "deployment": "10",
+      "research": "10",
+      "same": true
+    },
+    "AMI_EXTRACT_REQUIRED": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_DCI_SEARCH": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_DCI_FILL": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_AGENTIC_SEARCH": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_HOP2_SLOTS": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_FACT_EVIDENCE": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_FACT_SELECT": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_CHUNK_MEMORY": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_EVENT_DATES": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_EVENT_DATES_AT_ADD": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_EVENT_DATES_STORED": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_EVENT_DATES_ADD_CALL": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_SUPERSEDE_MARK": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_CHRONO_ORDER": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_NEWEST_FIRST": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_RERANK_MODEL": {
+      "deployment": "",
+      "research": "",
+      "same": true
+    },
+    "AMI_LLM_RETRIES": {
+      "deployment": "0",
+      "research": "0",
+      "same": true
+    },
+    "AMI_REPRO_EMBED_PROTOCOL": {
+      "deployment": "openai",
+      "research": "openai",
+      "same": true
+    }
+  },
+  "private_materials_excluded": true
+}

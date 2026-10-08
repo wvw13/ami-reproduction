@@ -1,3 +1,5 @@
+> Historical reproduction-v1.1 record; current deployment candidate documentation is README.md and docs/DEPLOYMENT.md. Machine-specific paths/provider hosts are redacted in this candidate.
+
 # 队友接手与 GitHub 发布
 
 交付版本：`reproduction-v1.1`（2026-10-07）。这是 ActiveMemoryIndex 的复现，不声明原创算法贡献。原作者、MIT LICENSE、prior work 和具体改动见 ATTRIBUTION.md / CHANGELOG.md。
@@ -43,7 +45,7 @@ python3.10 -m venv .venv
 在服务器原仓库中，经确认公开/推送且配置好本人 GitHub SSH 或 credential manager 后：
 
 ```bash
-cd /data1/sp/Agent-Memory/ami-reproduction
+cd <PROJECT_ROOT>/ami-reproduction
 git remote add origin https://github.com/YOUR_OWNER/ami-reproduction.git
 git push -u origin main
 git push origin reproduction-v1 reproduction-v1.1
